@@ -23,12 +23,12 @@ TRAIN:
   MAX_SIZE: 2000
   IMS_PER_BATCH: 1
   BATCH_SIZE_PER_IM: 4096
-  PROPOSAL_FILES: ('data/selective_search_data/voc_2007_trainval.pkl',)
+  PROPOSAL_FILES: ('/data/michal5/VOCdevkit/data/selective_search_data/voc_2007_trainval.pkl',)
 TEST:
   SCALE: 480
   MAX_SIZE: 2000
   NMS: 0.3
-  PROPOSAL_FILES: ('data/selective_search_data',)
+  PROPOSAL_FILES: ('/data/michal5/VOCdevkit/data/selective_search_data/voc_2007_test.pkl',)
   BBOX_AUG:
     ENABLED: True
     H_FLIP: True

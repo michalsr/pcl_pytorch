@@ -25,7 +25,9 @@ import os
 from core.config import cfg
 
 # Path to data dir
-_DATA_DIR = cfg.DATA_DIR
+#_DATA_DIR = cfg.DATA_DIR
+_DATA_DIR = ''
+print(cfg.DATA_DIR,'data dir')
 
 # Required dataset entry keys
 IM_DIR = 'image_directory'
@@ -104,17 +106,17 @@ DATASETS = {
     },
     'voc_2007_trainval': {
         IM_DIR:
-            _DATA_DIR + '/VOC2007/JPEGImages',
+            _DATA_DIR + '/data/michal5/VOCdevkit/VOCdevkit/VOC2007/JPEGImages',
         ANN_FN:
-            _DATA_DIR + '/VOC2007/annotations/voc_2007_trainval.json',
+            _DATA_DIR + '/data/michal5/VOCdevkit/VOCdevkit/VOC2007/annotations/voc_2007_trainval.json',
         DEVKIT_DIR:
             _DATA_DIR
     },
     'voc_2007_test': {
         IM_DIR:
-            _DATA_DIR + '/VOC2007/JPEGImages',
+            _DATA_DIR + '/data/michal5/VOCdevkit/VOCdevkit/VOC2007/JPEGImages',
         ANN_FN:
-            _DATA_DIR + '/VOC2007/annotations/voc_2007_test.json',
+            _DATA_DIR + '/data/michal5/VOCdevkit/VOCdevkit/VOC2007/annotations/voc_2007_test.json',
         DEVKIT_DIR:
             _DATA_DIR
     },

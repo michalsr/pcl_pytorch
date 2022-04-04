@@ -93,9 +93,9 @@ class Generalized_RCNN(nn.Module):
         self._init_modules()
 
     def _init_modules(self):
-        if cfg.MODEL.LOAD_IMAGENET_PRETRAINED_WEIGHTS:
-            if cfg.MODEL.CONV_BODY.split('.')[0] == 'vgg16':
-                vgg_utils.load_pretrained_imagenet_weights(self)
+        # if cfg.MODEL.LOAD_IMAGENET_PRETRAINED_WEIGHTS:
+        #     if cfg.MODEL.CONV_BODY.split('.')[0] == 'vgg16':
+        #         vgg_utils.load_pretrained_imagenet_weights(self)
 
         if cfg.TRAIN.FREEZE_CONV_BODY:
             for p in self.Conv_Body.parameters():
